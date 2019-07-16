@@ -53,7 +53,7 @@ public final class LogglyService: Service {
         return [:]
     }
 
-    public var isComplete: Bool { return customerToken?.isEmpty == false }
+    public var hasValidConfiguration: Bool { return customerToken?.isEmpty == false }
 
     public func notifyCreated(completion: @escaping () -> Void) {
         try! KeychainManager().setLogglyCustomerToken(customerToken)

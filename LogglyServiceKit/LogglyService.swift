@@ -55,21 +55,18 @@ public final class LogglyService: Service {
 
     public var hasConfiguration: Bool { return customerToken?.isEmpty == false }
 
-    public func notifyCreated(completion: @escaping () -> Void) {
+    public func completeCreate() {
         try! KeychainManager().setLogglyCustomerToken(customerToken)
         createClient()
-        notifyDelegateOfCreation(completion: completion)
     }
 
-    public func notifyUpdated(completion: @escaping () -> Void) {
+    public func completeUpdate() {
         try! KeychainManager().setLogglyCustomerToken(customerToken)
         createClient()
-        notifyDelegateOfUpdation(completion: completion)
     }
 
-    public func notifyDeleted(completion: @escaping () -> Void) {
+    public func completeDelete() {
         try! KeychainManager().setLogglyCustomerToken()
-        notifyDelegateOfDeletion(completion: completion)
     }
 
     private func createClient() {

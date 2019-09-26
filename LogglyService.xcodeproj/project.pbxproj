@@ -11,7 +11,6 @@
 		A92E3BCE22BC3F4500B9AF51 /* LoopKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A92E3BCC22BC3F4500B9AF51 /* LoopKitUI.framework */; };
 		A92E3BCF22BC3F4700B9AF51 /* LogglyServiceKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9C7BE6922B9A812001F3FB4 /* LogglyServiceKit.framework */; };
 		A9927CB522BC29CC0006B7E9 /* LogglyServiceKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9927CAC22BC29CC0006B7E9 /* LogglyServiceKitUI.framework */; };
-		A9927CBA22BC29CC0006B7E9 /* LogglyServiceKitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9927CB922BC29CC0006B7E9 /* LogglyServiceKitUITests.swift */; };
 		A9927CBC22BC29CC0006B7E9 /* LogglyServiceKitUI.h in Headers */ = {isa = PBXBuildFile; fileRef = A9927CAE22BC29CC0006B7E9 /* LogglyServiceKitUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A9A1EE8E22BC5D6400DFACDA /* LogglyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A1EE8D22BC5D6400DFACDA /* LogglyService.swift */; };
 		A9A1EE9122BC5D7C00DFACDA /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A1EE9022BC5D7C00DFACDA /* UIColor.swift */; };
@@ -24,7 +23,6 @@
 		A9B007B722BD70E3000131DE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A9B007B522BD70E3000131DE /* Localizable.strings */; };
 		A9B007BA22BD7107000131DE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A9B007B822BD7107000131DE /* Localizable.strings */; };
 		A9C7BE7322B9A812001F3FB4 /* LogglyServiceKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9C7BE6922B9A812001F3FB4 /* LogglyServiceKit.framework */; };
-		A9C7BE7822B9A812001F3FB4 /* LogglyServiceKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C7BE7722B9A812001F3FB4 /* LogglyServiceKitTests.swift */; };
 		A9C7BE7A22B9A812001F3FB4 /* LogglyServiceKit.h in Headers */ = {isa = PBXBuildFile; fileRef = A9C7BE6C22B9A812001F3FB4 /* LogglyServiceKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A9CBEE0D22BC4480004ECA4F /* LoopKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9CBEE0C22BC4480004ECA4F /* LoopKit.framework */; };
 		A9CBEE0E22BC449B004ECA4F /* LoopKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9CBEE0C22BC4480004ECA4F /* LoopKit.framework */; };
@@ -63,7 +61,6 @@
 		A9927CAE22BC29CC0006B7E9 /* LogglyServiceKitUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LogglyServiceKitUI.h; sourceTree = "<group>"; };
 		A9927CAF22BC29CC0006B7E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A9927CB422BC29CC0006B7E9 /* LogglyServiceKitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LogglyServiceKitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A9927CB922BC29CC0006B7E9 /* LogglyServiceKitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogglyServiceKitUITests.swift; sourceTree = "<group>"; };
 		A9927CBB22BC29CC0006B7E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A9A1EE8D22BC5D6400DFACDA /* LogglyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogglyService.swift; sourceTree = "<group>"; };
 		A9A1EE9022BC5D7C00DFACDA /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
@@ -75,7 +72,6 @@
 		A9B007B622BD70E3000131DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		A9B007B922BD7107000131DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		A9B007C122BD714A000131DE /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
-		A9B007C222BD714F000131DE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		A9B007C322BD714F000131DE /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		A9B007C422BD7151000131DE /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Localizable.strings; sourceTree = "<group>"; };
 		A9B007C522BD7152000131DE /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -84,7 +80,6 @@
 		A9B007C822BD7155000131DE /* nb */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nb; path = nb.lproj/Localizable.strings; sourceTree = "<group>"; };
 		A9B007C922BD7156000131DE /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/Localizable.strings; sourceTree = "<group>"; };
 		A9B007CA22BD7157000131DE /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
-		A9B007CB22BD715C000131DE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		A9B007CC22BD715E000131DE /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		A9B007CD22BD715F000131DE /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Localizable.strings; sourceTree = "<group>"; };
 		A9B007CE22BD7160000131DE /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -98,7 +93,6 @@
 		A9C7BE6C22B9A812001F3FB4 /* LogglyServiceKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LogglyServiceKit.h; sourceTree = "<group>"; };
 		A9C7BE6D22B9A812001F3FB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A9C7BE7222B9A812001F3FB4 /* LogglyServiceKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LogglyServiceKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A9C7BE7722B9A812001F3FB4 /* LogglyServiceKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogglyServiceKitTests.swift; sourceTree = "<group>"; };
 		A9C7BE7922B9A812001F3FB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A9CBEE0C22BC4480004ECA4F /* LoopKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = LoopKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9CBEE0F22BC449B004ECA4F /* LoopKitUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = LoopKitUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -166,7 +160,6 @@
 			isa = PBXGroup;
 			children = (
 				A9927CBB22BC29CC0006B7E9 /* Info.plist */,
-				A9927CB922BC29CC0006B7E9 /* LogglyServiceKitUITests.swift */,
 			);
 			path = LogglyServiceKitUITests;
 			sourceTree = "<group>";
@@ -226,7 +219,6 @@
 			isa = PBXGroup;
 			children = (
 				A9C7BE7922B9A812001F3FB4 /* Info.plist */,
-				A9C7BE7722B9A812001F3FB4 /* LogglyServiceKitTests.swift */,
 			);
 			path = LogglyServiceKitTests;
 			sourceTree = "<group>";
@@ -491,7 +483,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A9927CBA22BC29CC0006B7E9 /* LogglyServiceKitUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -508,7 +499,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A9C7BE7822B9A812001F3FB4 /* LogglyServiceKitTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -538,7 +528,6 @@
 			children = (
 				A9B007B622BD70E3000131DE /* Base */,
 				A9B007C122BD714A000131DE /* es */,
-				A9B007C222BD714F000131DE /* en */,
 				A9B007C322BD714F000131DE /* zh-Hans */,
 				A9B007C422BD7151000131DE /* nl */,
 				A9B007C522BD7152000131DE /* fr */,
@@ -555,7 +544,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				A9B007B922BD7107000131DE /* Base */,
-				A9B007CB22BD715C000131DE /* en */,
 				A9B007CC22BD715E000131DE /* zh-Hans */,
 				A9B007CD22BD715F000131DE /* nl */,
 				A9B007CE22BD7160000131DE /* fr */,

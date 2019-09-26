@@ -10,7 +10,6 @@ import LoopKit
 import LoopKitUI
 import LogglyServiceKit
 
-
 extension LogglyService: ServiceUI {
 
     public static func setupViewController() -> (UIViewController & ServiceNotifying & CompletionNotifying)? {

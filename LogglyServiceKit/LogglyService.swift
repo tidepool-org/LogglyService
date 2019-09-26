@@ -9,7 +9,6 @@
 import os.log
 import LoopKit
 
-
 public final class LogglyService: Service {
 
     public static let managerIdentifier = "LogglyService"
@@ -79,7 +78,6 @@ public final class LogglyService: Service {
 
 }
 
-
 extension LogglyService {
 
     public var debugDescription: String {
@@ -89,7 +87,6 @@ extension LogglyService {
     }
 
 }
-
 
 extension LogglyService: LoggingService {
 
@@ -109,7 +106,6 @@ extension LogglyService: LoggingService {
 
 }
 
-
 extension KeychainManager {
 
     func setLogglyCustomerToken(_ logglyCustomerToken: String? = nil) throws {
@@ -122,9 +118,7 @@ extension KeychainManager {
 
 }
 
-
 fileprivate let LogglyCustomerTokenService = "LogglyCustomerToken"
-
 
 fileprivate class LogglyClient {
 
@@ -145,7 +139,6 @@ fileprivate class LogglyClient {
     }
 
 }
-
 
 fileprivate extension URLSession {
 
@@ -186,7 +179,6 @@ fileprivate extension URLSession {
     }
 
 }
-
 
 extension OSLogType: CustomStringConvertible {
 

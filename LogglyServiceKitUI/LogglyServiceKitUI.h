@@ -15,5 +15,3 @@ FOUNDATION_EXPORT double LogglyServiceKitUIVersionNumber;
 FOUNDATION_EXPORT const unsigned char LogglyServiceKitUIVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <LogglyServiceKitUI/PublicHeader.h>
-
-

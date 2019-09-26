@@ -94,7 +94,7 @@ extension LogglyService {
 }
 
 
-extension LogglyService: Logging {
+extension LogglyService: LoggingService {
 
     public func log (_ message: StaticString, subsystem: String, category: String, type: OSLogType, _ args: [CVarArg]) {
 

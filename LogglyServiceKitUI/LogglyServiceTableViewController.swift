@@ -11,7 +11,6 @@ import LoopKit
 import LoopKitUI
 import LogglyServiceKit
 
-
 final class LogglyServiceTableViewController: ServiceTableViewController, UITextFieldDelegate {
 
     private let logglyService: LogglyService
@@ -137,11 +136,8 @@ final class LogglyServiceTableViewController: ServiceTableViewController, UIText
 
 }
 
-
 extension AuthenticationTableViewCell: IdentifiableClass {}
 
-
 extension AuthenticationTableViewCell: NibLoadable {}
-
 
 extension TextButtonTableViewCell: IdentifiableClass {}

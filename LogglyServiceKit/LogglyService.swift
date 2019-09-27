@@ -9,7 +9,6 @@
 import os.log
 import LoopKit
 
-
 public final class LogglyService: Service {
 
     public static let managerIdentifier = "LogglyService"
@@ -53,23 +52,20 @@ public final class LogglyService: Service {
         return [:]
     }
 
-    public var hasValidConfiguration: Bool { return customerToken?.isEmpty == false }
+    public var hasConfiguration: Bool { return customerToken?.isEmpty == false }
 
-    public func notifyCreated(completion: @escaping () -> Void) {
+    public func completeCreate() {
         try! KeychainManager().setLogglyCustomerToken(customerToken)
         createClient()
-        notifyDelegateOfCreation(completion: completion)
     }
 
-    public func notifyUpdated(completion: @escaping () -> Void) {
+    public func completeUpdate() {
         try! KeychainManager().setLogglyCustomerToken(customerToken)
         createClient()
-        notifyDelegateOfUpdation(completion: completion)
     }
 
-    public func notifyDeleted(completion: @escaping () -> Void) {
+    public func completeDelete() {
         try! KeychainManager().setLogglyCustomerToken()
-        notifyDelegateOfDeletion(completion: completion)
     }
 
     private func createClient() {
@@ -82,7 +78,6 @@ public final class LogglyService: Service {
 
 }
 
-
 extension LogglyService {
 
     public var debugDescription: String {
@@ -93,8 +88,7 @@ extension LogglyService {
 
 }
 
-
-extension LogglyService: Logging {
+extension LogglyService: LoggingService {
 
     public func log (_ message: StaticString, subsystem: String, category: String, type: OSLogType, _ args: [CVarArg]) {
 
@@ -112,7 +106,6 @@ extension LogglyService: Logging {
 
 }
 
-
 extension KeychainManager {
 
     func setLogglyCustomerToken(_ logglyCustomerToken: String? = nil) throws {
@@ -125,9 +118,7 @@ extension KeychainManager {
 
 }
 
-
 fileprivate let LogglyCustomerTokenService = "LogglyCustomerToken"
-
 
 fileprivate class LogglyClient {
 
@@ -148,7 +139,6 @@ fileprivate class LogglyClient {
     }
 
 }
-
 
 fileprivate extension URLSession {
 
@@ -189,7 +179,6 @@ fileprivate extension URLSession {
     }
 
 }
-
 
 extension OSLogType: CustomStringConvertible {
 

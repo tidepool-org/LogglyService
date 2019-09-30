@@ -13,11 +13,11 @@ import LogglyServiceKit
 extension LogglyService: ServiceUI {
 
     public static func setupViewController() -> (UIViewController & ServiceSetupNotifying & CompletionNotifying)? {
-        return ServiceViewController(rootViewController: LogglyServiceTableViewController(logglyService: LogglyService(), for: .create))
+        return ServiceViewController(rootViewController: LogglyServiceTableViewController(service: LogglyService(), for: .create))
     }
 
     public func settingsViewController() -> (UIViewController & ServiceSetupNotifying & CompletionNotifying) {
-      return ServiceViewController(rootViewController: LogglyServiceTableViewController(logglyService: self, for: .update))
+      return ServiceViewController(rootViewController: LogglyServiceTableViewController(service: self, for: .update))
     }
 
 }

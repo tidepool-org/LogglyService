@@ -11,29 +11,9 @@ import LoopKit
 
 public final class LogglyService: Service {
 
-    public static let managerIdentifier = "LogglyService"
+    public static let serviceIdentifier = "LogglyService"
 
     public static let localizedTitle = LocalizedString("Loggly", comment: "The title of the Loggly service")
-
-    public var delegateQueue: DispatchQueue! {
-        get {
-            return delegate.queue
-        }
-        set {
-            delegate.queue = newValue
-        }
-    }
-
-    public weak var serviceDelegate: ServiceDelegate? {
-        get {
-            return delegate.delegate
-        }
-        set {
-            delegate.delegate = newValue
-        }
-    }
-
-    private let delegate = WeakSynchronizedDelegate<ServiceDelegate>()
 
     public var customerToken: String?
 
@@ -74,16 +54,6 @@ public final class LogglyService: Service {
         } else {
             client = nil
         }
-    }
-
-}
-
-extension LogglyService {
-
-    public var debugDescription: String {
-        return """
-        ## LogglyService
-        """
     }
 
 }

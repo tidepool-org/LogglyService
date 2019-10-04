@@ -11,7 +11,6 @@ import LoopKitUI
 import LogglyServiceKit
 import LogglyServiceKitUI
 
-
 class LogglyServiceKitPlugin: NSObject, ServiceUIPlugin {
 
     private let log = OSLog(category: "LogglyServiceKitPlugin")

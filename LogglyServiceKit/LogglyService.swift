@@ -15,7 +15,7 @@ public final class LogglyService: Service {
 
     public static let localizedTitle = LocalizedString("Loggly", comment: "The title of the Loggly service")
 
-    public var serviceDelegate: ServiceDelegate?
+    public weak var serviceDelegate: ServiceDelegate?
 
     public var customerToken: String?
 

@@ -15,6 +15,8 @@ public final class LogglyService: Service {
 
     public static let localizedTitle = LocalizedString("Loggly", comment: "The title of the Loggly service")
 
+    public var serviceDelegate: ServiceDelegate?
+
     public var customerToken: String?
 
     private var client: LogglyClient?
@@ -42,6 +44,7 @@ public final class LogglyService: Service {
     public func completeUpdate() {
         try! KeychainManager().setLogglyCustomerToken(customerToken)
         createClient()
+        serviceDelegate?.serviceDidUpdate(self)
     }
 
     public func completeDelete() {

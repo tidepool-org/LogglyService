@@ -44,7 +44,7 @@ public final class LogglyService: Service {
     public func completeUpdate() {
         try! KeychainManager().setLogglyCustomerToken(customerToken)
         createClient()
-        serviceDelegate?.serviceDidUpdate(self)
+        serviceDelegate?.serviceDidUpdateState(self)
     }
 
     public func completeDelete() {

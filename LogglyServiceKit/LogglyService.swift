@@ -21,13 +21,11 @@ public final class LogglyService: Service {
 
     private var client: LogglyClient?
 
-    public init() {
+    public init() {}
+
+    public init?(rawState: RawStateValue) {
         self.customerToken = try? KeychainManager().getLogglyCustomerToken()
         createClient()
-    }
-
-    public convenience init?(rawState: RawStateValue) {
-        self.init()
     }
 
     public var rawState: RawStateValue {

@@ -16,7 +16,7 @@ extension LogglyService: ServiceUI {
         return ServiceViewController(rootViewController: LogglyServiceTableViewController(service: LogglyService(), for: .create))
     }
 
-    public func settingsViewController() -> (UIViewController & ServiceSetupNotifying & CompletionNotifying) {
+    public func settingsViewController() -> (UIViewController & ServiceSettingsNotifying & CompletionNotifying) {
       return ServiceViewController(rootViewController: LogglyServiceTableViewController(service: self, for: .update))
     }
 

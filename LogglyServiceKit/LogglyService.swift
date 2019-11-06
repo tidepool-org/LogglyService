@@ -15,17 +15,17 @@ public final class LogglyService: Service {
 
     public static let localizedTitle = LocalizedString("Loggly", comment: "The title of the Loggly service")
 
+    public weak var serviceDelegate: ServiceDelegate?
+
     public var customerToken: String?
 
     private var client: LogglyClient?
 
-    public init() {
+    public init() {}
+
+    public init?(rawState: RawStateValue) {
         self.customerToken = try? KeychainManager().getLogglyCustomerToken()
         createClient()
-    }
-
-    public convenience init?(rawState: RawStateValue) {
-        self.init()
     }
 
     public var rawState: RawStateValue {
@@ -42,6 +42,7 @@ public final class LogglyService: Service {
     public func completeUpdate() {
         try! KeychainManager().setLogglyCustomerToken(customerToken)
         createClient()
+        serviceDelegate?.serviceDidUpdateState(self)
     }
 
     public func completeDelete() {

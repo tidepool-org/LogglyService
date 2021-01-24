@@ -15,15 +15,13 @@ import HealthKit
 extension LogglyService: ServiceUI {
     
     public static var image: UIImage? { nil }
-    
-    public static var providesOnboarding: Bool { return false }
-    
-    public static func setupViewController(currentTherapySettings: TherapySettings, preferredGlucoseUnit: HKUnit, chartColors: ChartColorPalette, carbTintColor: Color, glucoseTintColor: Color, guidanceColors: GuidanceColors, insulinTintColor: Color) -> (UIViewController & CompletionNotifying & ServiceSetupNotifying)?
+
+    public static func setupViewController(colorPalette: LoopUIColorPalette) -> UIResult<UIViewController & ServiceCreateNotifying & ServiceOnboardNotifying & CompletionNotifying, ServiceUI, Error>
     {
-        return ServiceViewController(rootViewController: LogglyServiceTableViewController(service: LogglyService(), for: .create))
+        return .userInteractionRequired(ServiceViewController(rootViewController: LogglyServiceTableViewController(service: LogglyService(), for: .create)))
     }
     
-    public func settingsViewController(currentTherapySettings: TherapySettings, preferredGlucoseUnit: HKUnit, chartColors: ChartColorPalette, carbTintColor: Color, glucoseTintColor: Color, guidanceColors: GuidanceColors, insulinTintColor: Color) -> (UIViewController & CompletionNotifying & ServiceSettingsNotifying)
+    public func settingsViewController(colorPalette: LoopUIColorPalette) -> (UIViewController & ServiceOnboardNotifying & CompletionNotifying)
     {
         return ServiceViewController(rootViewController: LogglyServiceTableViewController(service: self, for: .update))
     }

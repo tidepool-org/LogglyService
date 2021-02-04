@@ -34,10 +34,6 @@ public final class LogglyService: Service {
 
     public let isOnboarded = true   // No distinction between created and onboarded
 
-    public func delete() {
-        completeDelete()
-    }
-
     public var hasConfiguration: Bool { return customerToken?.isEmpty == false }
 
     public func completeCreate() {

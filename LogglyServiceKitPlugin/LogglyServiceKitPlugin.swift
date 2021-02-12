@@ -12,7 +12,6 @@ import LogglyServiceKit
 import LogglyServiceKitUI
 
 class LogglyServiceKitPlugin: NSObject, ServiceUIPlugin {
-
     private let log = OSLog(category: "LogglyServiceKitPlugin")
 
     public var serviceType: ServiceUI.Type? {
@@ -21,7 +20,6 @@ class LogglyServiceKitPlugin: NSObject, ServiceUIPlugin {
 
     override init() {
         super.init()
-        log.default("LogglyServiceKitPlugin Instantiated")
+        log.default("Instantiated")
     }
-
 }

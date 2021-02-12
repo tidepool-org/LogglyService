@@ -32,6 +32,8 @@ public final class LogglyService: Service {
         return [:]
     }
 
+    public let isOnboarded = true   // No distinction between created and onboarded
+
     public var hasConfiguration: Bool { return customerToken?.isEmpty == false }
 
     public func completeCreate() {
@@ -47,6 +49,7 @@ public final class LogglyService: Service {
 
     public func completeDelete() {
         try! KeychainManager().setLogglyCustomerToken()
+        serviceDelegate?.serviceWantsDeletion(self)
     }
 
     private func createClient() {

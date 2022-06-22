@@ -120,6 +120,24 @@
 		A9CBEE0F22BC449B004ECA4F /* LoopKitUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = LoopKitUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9E4177522BBF869000D3BE9 /* LoopKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = LoopKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9E4177622BBF869000D3BE9 /* LoopKitUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = LoopKitUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5D9C05A27DAC4AD002E48F6 /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F5D9C05B27DAC4AD002E48F6 /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F5D9C05C27DAC4BA002E48F6 /* fi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fi; path = fi.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F5D9C05D27DAC4BA002E48F6 /* fi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fi; path = fi.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F5D9C05E27DAC4CA002E48F6 /* ro */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ro; path = ro.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F5D9C05F27DAC4CA002E48F6 /* ro */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ro; path = ro.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F5D9C06027DAC4D5002E48F6 /* sv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sv; path = sv.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F5D9C06127DAC4D5002E48F6 /* sv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sv; path = sv.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F5D9C06227DAC4DD002E48F6 /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F5D9C06327DAC4DD002E48F6 /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F5D9C06427DAC4F1002E48F6 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F5D9C06527DAC4F1002E48F6 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F5D9C06627DAC506002E48F6 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		F5D9C06727DAC506002E48F6 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		F5D9C06827DAC519002E48F6 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F5D9C06927DAC519002E48F6 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F5E0BE3227E1E0940033557E /* he */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = he; path = he.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F5E0BE3327E1E0940033557E /* he */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = he; path = he.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -456,6 +474,15 @@
 				pl,
 				ru,
 				es,
+				da,
+				fi,
+				ro,
+				sv,
+				vi,
+				ja,
+				"pt-BR",
+				tr,
+				he,
 			);
 			mainGroup = A9C7BE5F22B9A812001F3FB4;
 			productRefGroup = A9C7BE6A22B9A812001F3FB4 /* Products */;
@@ -530,7 +557,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "${SRCROOT}/Scripts/copy-frameworks.sh\n";
+			shellScript = "\"${SRCROOT}/Scripts/copy-frameworks.sh\"\n";
 		};
 		A9CBEE1122BC44A3004ECA4F /* Copy Frameworks with Carthage */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -666,6 +693,15 @@
 				A9B007C822BD7155000131DE /* nb */,
 				A9B007C922BD7156000131DE /* pl */,
 				A9B007CA22BD7157000131DE /* ru */,
+				F5D9C05A27DAC4AD002E48F6 /* da */,
+				F5D9C05C27DAC4BA002E48F6 /* fi */,
+				F5D9C05E27DAC4CA002E48F6 /* ro */,
+				F5D9C06027DAC4D5002E48F6 /* sv */,
+				F5D9C06227DAC4DD002E48F6 /* vi */,
+				F5D9C06427DAC4F1002E48F6 /* ja */,
+				F5D9C06627DAC506002E48F6 /* pt-BR */,
+				F5D9C06827DAC519002E48F6 /* tr */,
+				F5E0BE3227E1E0940033557E /* he */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -683,6 +719,15 @@
 				A9B007D222BD7163000131DE /* pl */,
 				A9B007D322BD7164000131DE /* ru */,
 				A9B007D422BD7165000131DE /* es */,
+				F5D9C05B27DAC4AD002E48F6 /* da */,
+				F5D9C05D27DAC4BA002E48F6 /* fi */,
+				F5D9C05F27DAC4CA002E48F6 /* ro */,
+				F5D9C06127DAC4D5002E48F6 /* sv */,
+				F5D9C06327DAC4DD002E48F6 /* vi */,
+				F5D9C06527DAC4F1002E48F6 /* ja */,
+				F5D9C06727DAC506002E48F6 /* pt-BR */,
+				F5D9C06927DAC519002E48F6 /* tr */,
+				F5E0BE3327E1E0940033557E /* he */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -893,10 +938,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -1005,10 +1047,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_TREAT_IMPLICIT_FUNCTION_DECLARATIONS_AS_ERRORS = YES;

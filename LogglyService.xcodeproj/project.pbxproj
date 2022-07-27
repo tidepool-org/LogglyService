@@ -10,7 +10,6 @@
 		A92E3BCD22BC3F4500B9AF51 /* LoopKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A92E3BCB22BC3F4500B9AF51 /* LoopKit.framework */; };
 		A92E3BCE22BC3F4500B9AF51 /* LoopKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A92E3BCC22BC3F4500B9AF51 /* LoopKitUI.framework */; };
 		A92E3BCF22BC3F4700B9AF51 /* LogglyServiceKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9C7BE6922B9A812001F3FB4 /* LogglyServiceKit.framework */; };
-		A9927CB522BC29CC0006B7E9 /* LogglyServiceKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9927CAC22BC29CC0006B7E9 /* LogglyServiceKitUI.framework */; };
 		A9927CBC22BC29CC0006B7E9 /* LogglyServiceKitUI.h in Headers */ = {isa = PBXBuildFile; fileRef = A9927CAE22BC29CC0006B7E9 /* LogglyServiceKitUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A99C711F233965F000AB9035 /* LogglyServiceKitPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = A99C711D233965F000AB9035 /* LogglyServiceKitPlugin.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A99C7124233966AD00AB9035 /* LogglyServiceKitPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99C7123233966AD00AB9035 /* LogglyServiceKitPlugin.swift */; };
@@ -25,12 +24,12 @@
 		A9B007B122BD6FE9000131DE /* LocalizedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B007AF22BD6FE9000131DE /* LocalizedString.swift */; };
 		A9B007B722BD70E3000131DE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A9B007B522BD70E3000131DE /* Localizable.strings */; };
 		A9B007BA22BD7107000131DE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A9B007B822BD7107000131DE /* Localizable.strings */; };
-		A9C7BE7322B9A812001F3FB4 /* LogglyServiceKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9C7BE6922B9A812001F3FB4 /* LogglyServiceKit.framework */; };
 		A9C7BE7A22B9A812001F3FB4 /* LogglyServiceKit.h in Headers */ = {isa = PBXBuildFile; fileRef = A9C7BE6C22B9A812001F3FB4 /* LogglyServiceKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A9CBEE0D22BC4480004ECA4F /* LoopKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9CBEE0C22BC4480004ECA4F /* LoopKit.framework */; };
-		A9CBEE0E22BC449B004ECA4F /* LoopKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9CBEE0C22BC4480004ECA4F /* LoopKit.framework */; };
-		A9CBEE1022BC449B004ECA4F /* LoopKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9CBEE0F22BC449B004ECA4F /* LoopKitUI.framework */; };
 		A9E4177722BBF869000D3BE9 /* LoopKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9E4177522BBF869000D3BE9 /* LoopKit.framework */; };
+		C1F0E0A7286514DB009EC038 /* LogglyServiceKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9C7BE6922B9A812001F3FB4 /* LogglyServiceKit.framework */; };
+		C1F0E0A8286514DB009EC038 /* LogglyServiceKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A9C7BE6922B9A812001F3FB4 /* LogglyServiceKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C1F0E0AA286514DC009EC038 /* LogglyServiceKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9927CAC22BC29CC0006B7E9 /* LogglyServiceKitUI.framework */; };
+		C1F0E0AB286514DC009EC038 /* LogglyServiceKitUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A9927CAC22BC29CC0006B7E9 /* LogglyServiceKitUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,13 +39,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = A9C7BE6822B9A812001F3FB4;
 			remoteInfo = LogglyServiceKit;
-		};
-		A9927CB622BC29CC0006B7E9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A9C7BE6022B9A812001F3FB4 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A9927CAB22BC29CC0006B7E9;
-			remoteInfo = LogglyServiceKitUI;
 		};
 		A99C71272339692000AB9035 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -62,14 +54,22 @@
 			remoteGlobalIDString = A9927CAB22BC29CC0006B7E9;
 			remoteInfo = LogglyServiceKitUI;
 		};
-		A9C7BE7422B9A812001F3FB4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A9C7BE6022B9A812001F3FB4 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A9C7BE6822B9A812001F3FB4;
-			remoteInfo = LogglyService;
-		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C1F0E0A9286514DB009EC038 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C1F0E0A8286514DB009EC038 /* LogglyServiceKit.framework in Embed Frameworks */,
+				C1F0E0AB286514DC009EC038 /* LogglyServiceKitUI.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		A92E3BCB22BC3F4500B9AF51 /* LoopKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = LoopKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -77,8 +77,6 @@
 		A9927CAC22BC29CC0006B7E9 /* LogglyServiceKitUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LogglyServiceKitUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9927CAE22BC29CC0006B7E9 /* LogglyServiceKitUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LogglyServiceKitUI.h; sourceTree = "<group>"; };
 		A9927CAF22BC29CC0006B7E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A9927CB422BC29CC0006B7E9 /* LogglyServiceKitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LogglyServiceKitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A9927CBB22BC29CC0006B7E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A99C711B233965F000AB9035 /* LogglyServiceKitPlugin.loopplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LogglyServiceKitPlugin.loopplugin; sourceTree = BUILT_PRODUCTS_DIR; };
 		A99C711D233965F000AB9035 /* LogglyServiceKitPlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LogglyServiceKitPlugin.h; sourceTree = "<group>"; };
 		A99C711E233965F000AB9035 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -114,8 +112,6 @@
 		A9C7BE6922B9A812001F3FB4 /* LogglyServiceKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LogglyServiceKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9C7BE6C22B9A812001F3FB4 /* LogglyServiceKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LogglyServiceKit.h; sourceTree = "<group>"; };
 		A9C7BE6D22B9A812001F3FB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A9C7BE7222B9A812001F3FB4 /* LogglyServiceKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LogglyServiceKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A9C7BE7922B9A812001F3FB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A9CBEE0C22BC4480004ECA4F /* LoopKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = LoopKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9CBEE0F22BC449B004ECA4F /* LoopKitUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = LoopKitUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9E4177522BBF869000D3BE9 /* LoopKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = LoopKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -151,20 +147,12 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A9927CB122BC29CC0006B7E9 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A9CBEE0E22BC449B004ECA4F /* LoopKit.framework in Frameworks */,
-				A9CBEE1022BC449B004ECA4F /* LoopKitUI.framework in Frameworks */,
-				A9927CB522BC29CC0006B7E9 /* LogglyServiceKitUI.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		A99C7118233965F000AB9035 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1F0E0A7286514DB009EC038 /* LogglyServiceKit.framework in Frameworks */,
+				C1F0E0AA286514DC009EC038 /* LogglyServiceKitUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -173,15 +161,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A9E4177722BBF869000D3BE9 /* LoopKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A9C7BE6F22B9A812001F3FB4 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A9CBEE0D22BC4480004ECA4F /* LoopKit.framework in Frameworks */,
-				A9C7BE7322B9A812001F3FB4 /* LogglyServiceKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,14 +180,6 @@
 				A9B007B822BD7107000131DE /* Localizable.strings */,
 			);
 			path = LogglyServiceKitUI;
-			sourceTree = "<group>";
-		};
-		A9927CB822BC29CC0006B7E9 /* LogglyServiceKitUITests */ = {
-			isa = PBXGroup;
-			children = (
-				A9927CBB22BC29CC0006B7E9 /* Info.plist */,
-			);
-			path = LogglyServiceKitUITests;
 			sourceTree = "<group>";
 		};
 		A99C711C233965F000AB9035 /* LogglyServiceKitPlugin */ = {
@@ -251,9 +222,7 @@
 				A9B007AD22BD6F9F000131DE /* Common */,
 				A99C713F23396D4B00AB9035 /* Extensions */,
 				A9C7BE6B22B9A812001F3FB4 /* LogglyServiceKit */,
-				A9C7BE7622B9A812001F3FB4 /* LogglyServiceKitTests */,
 				A9927CAD22BC29CC0006B7E9 /* LogglyServiceKitUI */,
-				A9927CB822BC29CC0006B7E9 /* LogglyServiceKitUITests */,
 				A99C711C233965F000AB9035 /* LogglyServiceKitPlugin */,
 				A9C7BE6A22B9A812001F3FB4 /* Products */,
 				A9E4177422BBF869000D3BE9 /* Frameworks */,
@@ -264,9 +233,7 @@
 			isa = PBXGroup;
 			children = (
 				A9C7BE6922B9A812001F3FB4 /* LogglyServiceKit.framework */,
-				A9C7BE7222B9A812001F3FB4 /* LogglyServiceKitTests.xctest */,
 				A9927CAC22BC29CC0006B7E9 /* LogglyServiceKitUI.framework */,
-				A9927CB422BC29CC0006B7E9 /* LogglyServiceKitUITests.xctest */,
 				A99C711B233965F000AB9035 /* LogglyServiceKitPlugin.loopplugin */,
 			);
 			name = Products;
@@ -281,14 +248,6 @@
 				A9B007B522BD70E3000131DE /* Localizable.strings */,
 			);
 			path = LogglyServiceKit;
-			sourceTree = "<group>";
-		};
-		A9C7BE7622B9A812001F3FB4 /* LogglyServiceKitTests */ = {
-			isa = PBXGroup;
-			children = (
-				A9C7BE7922B9A812001F3FB4 /* Info.plist */,
-			);
-			path = LogglyServiceKitTests;
 			sourceTree = "<group>";
 		};
 		A9E4177422BBF869000D3BE9 /* Frameworks */ = {
@@ -353,25 +312,6 @@
 			productReference = A9927CAC22BC29CC0006B7E9 /* LogglyServiceKitUI.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		A9927CB322BC29CC0006B7E9 /* LogglyServiceKitUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A9927CC222BC29CC0006B7E9 /* Build configuration list for PBXNativeTarget "LogglyServiceKitUITests" */;
-			buildPhases = (
-				A9927CB022BC29CC0006B7E9 /* Sources */,
-				A9927CB122BC29CC0006B7E9 /* Frameworks */,
-				A9927CB222BC29CC0006B7E9 /* Resources */,
-				A9CBEE1222BC44D6004ECA4F /* Copy Frameworks with Carthage */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				A9927CB722BC29CC0006B7E9 /* PBXTargetDependency */,
-			);
-			name = LogglyServiceKitUITests;
-			productName = LogglyServiceKitUITests;
-			productReference = A9927CB422BC29CC0006B7E9 /* LogglyServiceKitUITests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 		A99C711A233965F000AB9035 /* LogglyServiceKitPlugin */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A99C7122233965F000AB9035 /* Build configuration list for PBXNativeTarget "LogglyServiceKitPlugin" */;
@@ -380,7 +320,7 @@
 				A99C7117233965F000AB9035 /* Sources */,
 				A99C7118233965F000AB9035 /* Frameworks */,
 				A99C7119233965F000AB9035 /* Resources */,
-				A99C712B2339693A00AB9035 /* Copy Frameworks with Carthage */,
+				C1F0E0A9286514DB009EC038 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -411,25 +351,6 @@
 			productReference = A9C7BE6922B9A812001F3FB4 /* LogglyServiceKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		A9C7BE7122B9A812001F3FB4 /* LogglyServiceKitTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A9C7BE8022B9A812001F3FB4 /* Build configuration list for PBXNativeTarget "LogglyServiceKitTests" */;
-			buildPhases = (
-				A9C7BE6E22B9A812001F3FB4 /* Sources */,
-				A9C7BE6F22B9A812001F3FB4 /* Frameworks */,
-				A9C7BE7022B9A812001F3FB4 /* Resources */,
-				A9CBEE1122BC44A3004ECA4F /* Copy Frameworks with Carthage */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				A9C7BE7522B9A812001F3FB4 /* PBXTargetDependency */,
-			);
-			name = LogglyServiceKitTests;
-			productName = LogglyServiceTests;
-			productReference = A9C7BE7222B9A812001F3FB4 /* LogglyServiceKitTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -443,17 +364,11 @@
 					A9927CAB22BC29CC0006B7E9 = {
 						CreatedOnToolsVersion = 10.2.1;
 					};
-					A9927CB322BC29CC0006B7E9 = {
-						CreatedOnToolsVersion = 10.2.1;
-					};
 					A99C711A233965F000AB9035 = {
 						CreatedOnToolsVersion = 11.0;
 						LastSwiftMigration = 1100;
 					};
 					A9C7BE6822B9A812001F3FB4 = {
-						CreatedOnToolsVersion = 10.2.1;
-					};
-					A9C7BE7122B9A812001F3FB4 = {
 						CreatedOnToolsVersion = 10.2.1;
 					};
 				};
@@ -490,9 +405,7 @@
 			projectRoot = "";
 			targets = (
 				A9C7BE6822B9A812001F3FB4 /* LogglyServiceKit */,
-				A9C7BE7122B9A812001F3FB4 /* LogglyServiceKitTests */,
 				A9927CAB22BC29CC0006B7E9 /* LogglyServiceKitUI */,
-				A9927CB322BC29CC0006B7E9 /* LogglyServiceKitUITests */,
 				A99C711A233965F000AB9035 /* LogglyServiceKitPlugin */,
 			);
 		};
@@ -504,13 +417,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A9B007BA22BD7107000131DE /* Localizable.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A9927CB222BC29CC0006B7E9 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -529,79 +435,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A9C7BE7022B9A812001F3FB4 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		A99C712B2339693A00AB9035 /* Copy Frameworks with Carthage */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"$(BUILT_PRODUCTS_DIR)/LogglyServiceKit.framework",
-				"$(BUILT_PRODUCTS_DIR)/LogglyServiceKitUI.framework",
-			);
-			name = "Copy Frameworks with Carthage";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Scripts/copy-frameworks.sh\"\n";
-		};
-		A9CBEE1122BC44A3004ECA4F /* Copy Frameworks with Carthage */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"$(BUILT_PRODUCTS_DIR)/LoopKit.framework",
-			);
-			name = "Copy Frameworks with Carthage";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/LoopKit.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "CARTHAGE_BUILD_DIR=\"${SRCROOT}/Carthage/Build\"\nif [ -n \"${IPHONEOS_DEPLOYMENT_TARGET}\" ]; then\n    CARTHAGE_BUILD_DIR=\"${CARTHAGE_BUILD_DIR}/iOS\"\nelif [ -n \"${WATCHOS_DEPLOYMENT_TARGET}\" ]; then\n    CARTHAGE_BUILD_DIR=\"${CARTHAGE_BUILD_DIR}/watchOS\"\nelse\n    echo \"ERROR: Unexpected deployment target type\"\n    exit 1\nfi\n\nfor SCRIPT_INPUT_FILE in ${!SCRIPT_INPUT_FILE_*}; do\n    CARTHAGE_BUILD_FILE=\"${!SCRIPT_INPUT_FILE/${BUILT_PRODUCTS_DIR}/${CARTHAGE_BUILD_DIR}}\"\n    if [ -e \"${CARTHAGE_BUILD_FILE}\" ]; then\n        if [ -e \"${SCRIPT_INPUT_FILE}\" ]; then\n            echo \"ERROR: Duplicate frameworks found at:\"\n            echo \"  ${SCRIPT_INPUT_FILE}\"\n            echo \"  ${CARTHAGE_BUILD_FILE}\"\n            exit 1\n        fi\n        echo \"Substituting \\\"${CARTHAGE_BUILD_FILE}\\\" for \\\"${!SCRIPT_INPUT_FILE}\\\"\"\n        export ${SCRIPT_INPUT_FILE}=\"${CARTHAGE_BUILD_FILE}\"\n    fi\ndone\n\necho \"Copy Frameworks with Carthage\"\ncarthage copy-frameworks\n";
-		};
-		A9CBEE1222BC44D6004ECA4F /* Copy Frameworks with Carthage */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"$(BUILT_PRODUCTS_DIR)/LoopKit.framework",
-				"$(BUILT_PRODUCTS_DIR)/LoopKitUI.framework",
-			);
-			name = "Copy Frameworks with Carthage";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/LoopKit.framework",
-				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/LoopKitUI.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "CARTHAGE_BUILD_DIR=\"${SRCROOT}/Carthage/Build\"\nif [ -n \"${IPHONEOS_DEPLOYMENT_TARGET}\" ]; then\n    CARTHAGE_BUILD_DIR=\"${CARTHAGE_BUILD_DIR}/iOS\"\nelif [ -n \"${WATCHOS_DEPLOYMENT_TARGET}\" ]; then\n    CARTHAGE_BUILD_DIR=\"${CARTHAGE_BUILD_DIR}/watchOS\"\nelse\n    echo \"ERROR: Unexpected deployment target type\"\n    exit 1\nfi\n\nfor SCRIPT_INPUT_FILE in ${!SCRIPT_INPUT_FILE_*}; do\n    CARTHAGE_BUILD_FILE=\"${!SCRIPT_INPUT_FILE/${BUILT_PRODUCTS_DIR}/${CARTHAGE_BUILD_DIR}}\"\n    if [ -e \"${CARTHAGE_BUILD_FILE}\" ]; then\n        if [ -e \"${SCRIPT_INPUT_FILE}\" ]; then\n            echo \"ERROR: Duplicate frameworks found at:\"\n            echo \"  ${SCRIPT_INPUT_FILE}\"\n            echo \"  ${CARTHAGE_BUILD_FILE}\"\n            exit 1\n        fi\n        echo \"Substituting \\\"${CARTHAGE_BUILD_FILE}\\\" for \\\"${!SCRIPT_INPUT_FILE}\\\"\"\n        export ${SCRIPT_INPUT_FILE}=\"${CARTHAGE_BUILD_FILE}\"\n    fi\ndone\n\necho \"Copy Frameworks with Carthage\"\ncarthage copy-frameworks\n";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A9927CA822BC29CC0006B7E9 /* Sources */ = {
@@ -614,13 +448,6 @@
 				A9A1EE9322BC5D9200DFACDA /* LogglyService+UI.swift in Sources */,
 				A9A1EE9922BC5DC200DFACDA /* NibLoadable.swift in Sources */,
 				A9A1EE9522BC5DA100DFACDA /* LogglyServiceTableViewController.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A9927CB022BC29CC0006B7E9 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -642,13 +469,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A9C7BE6E22B9A812001F3FB4 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -656,11 +476,6 @@
 			isa = PBXTargetDependency;
 			target = A9C7BE6822B9A812001F3FB4 /* LogglyServiceKit */;
 			targetProxy = A92E3BC922BC3DE600B9AF51 /* PBXContainerItemProxy */;
-		};
-		A9927CB722BC29CC0006B7E9 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A9927CAB22BC29CC0006B7E9 /* LogglyServiceKitUI */;
-			targetProxy = A9927CB622BC29CC0006B7E9 /* PBXContainerItemProxy */;
 		};
 		A99C71282339692000AB9035 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -671,11 +486,6 @@
 			isa = PBXTargetDependency;
 			target = A9927CAB22BC29CC0006B7E9 /* LogglyServiceKitUI */;
 			targetProxy = A99C71292339692000AB9035 /* PBXContainerItemProxy */;
-		};
-		A9C7BE7522B9A812001F3FB4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A9C7BE6822B9A812001F3FB4 /* LogglyServiceKit */;
-			targetProxy = A9C7BE7422B9A812001F3FB4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -785,40 +595,6 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = NO;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		A9927CBF22BC29CC0006B7E9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = LogglyServiceKitUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.loopkit.LogglyServiceKitUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		A9927CC022BC29CC0006B7E9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = LogglyServiceKitUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.loopkit.LogglyServiceKitUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -1145,40 +921,6 @@
 			};
 			name = Release;
 		};
-		A9C7BE8122B9A812001F3FB4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = LogglyServiceKitTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.loopkit.LogglyServiceKitTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		A9C7BE8222B9A812001F3FB4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = LogglyServiceKitTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.loopkit.LogglyServiceKitTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1187,15 +929,6 @@
 			buildConfigurations = (
 				A9927CBD22BC29CC0006B7E9 /* Debug */,
 				A9927CBE22BC29CC0006B7E9 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A9927CC222BC29CC0006B7E9 /* Build configuration list for PBXNativeTarget "LogglyServiceKitUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A9927CBF22BC29CC0006B7E9 /* Debug */,
-				A9927CC022BC29CC0006B7E9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1223,15 +956,6 @@
 			buildConfigurations = (
 				A9C7BE7E22B9A812001F3FB4 /* Debug */,
 				A9C7BE7F22B9A812001F3FB4 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A9C7BE8022B9A812001F3FB4 /* Build configuration list for PBXNativeTarget "LogglyServiceKitTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A9C7BE8122B9A812001F3FB4 /* Debug */,
-				A9C7BE8222B9A812001F3FB4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

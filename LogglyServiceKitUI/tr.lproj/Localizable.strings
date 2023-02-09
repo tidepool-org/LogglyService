@@ -1,9 +1,0 @@
-/* The title of the Loggly customer token */
-"Customer Token" = "Müşteri Simgesi";
-
-/* Button title to delete a service */
-"Delete Service" = "Servisi Sil";
-
-/* The default placeholder for required text */
-"Required" = "Gerekli";
-

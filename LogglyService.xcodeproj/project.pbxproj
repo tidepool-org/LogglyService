@@ -116,8 +116,6 @@
 		A9CBEE0F22BC449B004ECA4F /* LoopKitUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = LoopKitUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9E4177522BBF869000D3BE9 /* LoopKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = LoopKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9E4177622BBF869000D3BE9 /* LoopKitUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = LoopKitUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C19100412995824D007E842B /* zh-Hans-CN */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans-CN"; path = "zh-Hans-CN.lproj/Localizable.strings"; sourceTree = "<group>"; };
-		C19100422995824D007E842B /* zh-Hans-CN */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans-CN"; path = "zh-Hans-CN.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		C1C247862995823200371B88 /* sk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sk; path = sk.lproj/Localizable.strings; sourceTree = "<group>"; };
 		C1C247872995823200371B88 /* sk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sk; path = sk.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F5D9C05A27DAC4AD002E48F6 /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -403,7 +401,6 @@
 				tr,
 				he,
 				sk,
-				"zh-Hans-CN",
 			);
 			mainGroup = A9C7BE5F22B9A812001F3FB4;
 			productRefGroup = A9C7BE6A22B9A812001F3FB4 /* Products */;
@@ -519,7 +516,6 @@
 				F5D9C06827DAC519002E48F6 /* tr */,
 				F5E0BE3227E1E0940033557E /* he */,
 				C1C247862995823200371B88 /* sk */,
-				C19100412995824D007E842B /* zh-Hans-CN */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -547,7 +543,6 @@
 				F5D9C06927DAC519002E48F6 /* tr */,
 				F5E0BE3327E1E0940033557E /* he */,
 				C1C247872995823200371B88 /* sk */,
-				C19100422995824D007E842B /* zh-Hans-CN */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";

@@ -1,3 +1,6 @@
+/* The title of the cancel action in an action sheet */
+"Cancel" = "Hủy bỏ";
+
 /* The title of the Loggly customer token */
 "Customer Token" = "Customer Token";
 
@@ -5,5 +8,5 @@
 "Delete Service" = "Delete Service";
 
 /* The default placeholder for required text */
-"Required" = "Required";
+"Required" = "Bắt buộc";
 

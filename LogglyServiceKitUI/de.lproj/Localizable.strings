@@ -5,7 +5,7 @@
 "Cancel" = "Abbrechen";
 
 /* The title of the Loggly customer token */
-"Customer Token" = "Customer Token";
+"Customer Token" = "Benutzer Token";
 
 /* Button title to delete a service */
 "Delete Service" = "Dienst löschen";

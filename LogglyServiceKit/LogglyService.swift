@@ -149,7 +149,8 @@ fileprivate extension URLSession {
 
     private func url(customerToken: String, tags: [String]) -> URL {
         let tags = tags.isEmpty ? ["http"] : tags
-        return URL(string: "https://logs-01.loggly.com/inputs/\(customerToken)/tag/\(tags.joined(separator: ","))/")!
+        let escapedToken = customerToken.addingPercentEncoding(withAllowedCharacters: .alphanumerics)!
+        return URL(string: "https://logs-01.loggly.com/inputs/\(escapedToken)/tag/\(tags.joined(separator: ","))/")!
     }
 
 }

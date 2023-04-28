@@ -16,7 +16,7 @@ extension LogglyService: ServiceUI {
     
     public static var image: UIImage? { nil }
 
-    public static func setupViewController(colorPalette: LoopUIColorPalette) -> SetupUIResult<ServiceViewController, ServiceUI>
+    public static func setupViewController(colorPalette: LoopUIColorPalette, pluginHost: PluginHost) -> SetupUIResult<ServiceViewController, ServiceUI>
     {
         return .userInteractionRequired(ServiceNavigationController(rootViewController: LogglyServiceTableViewController(service: LogglyService(), for: .create)))
     }

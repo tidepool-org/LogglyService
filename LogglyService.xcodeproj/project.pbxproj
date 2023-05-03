@@ -116,6 +116,11 @@
 		A9CBEE0F22BC449B004ECA4F /* LoopKitUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = LoopKitUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9E4177522BBF869000D3BE9 /* LoopKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = LoopKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9E4177622BBF869000D3BE9 /* LoopKitUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = LoopKitUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C121D8CE29C7866D00DA0520 /* cs */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = cs; path = cs.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C15A581E29C7866600D3A5A1 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C1C247862995823200371B88 /* sk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sk; path = sk.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C1C247872995823200371B88 /* sk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sk; path = sk.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C1FAB5BD29C786B000D25073 /* hi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hi; path = hi.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F5D9C05A27DAC4AD002E48F6 /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F5D9C05B27DAC4AD002E48F6 /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F5D9C05C27DAC4BA002E48F6 /* fi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fi; path = fi.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -398,6 +403,10 @@
 				"pt-BR",
 				tr,
 				he,
+				sk,
+				ar,
+				cs,
+				hi,
 			);
 			mainGroup = A9C7BE5F22B9A812001F3FB4;
 			productRefGroup = A9C7BE6A22B9A812001F3FB4 /* Products */;
@@ -512,6 +521,7 @@
 				F5D9C06627DAC506002E48F6 /* pt-BR */,
 				F5D9C06827DAC519002E48F6 /* tr */,
 				F5E0BE3227E1E0940033557E /* he */,
+				C1C247862995823200371B88 /* sk */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -538,6 +548,10 @@
 				F5D9C06727DAC506002E48F6 /* pt-BR */,
 				F5D9C06927DAC519002E48F6 /* tr */,
 				F5E0BE3327E1E0940033557E /* he */,
+				C1C247872995823200371B88 /* sk */,
+				C15A581E29C7866600D3A5A1 /* ar */,
+				C121D8CE29C7866D00DA0520 /* cs */,
+				C1FAB5BD29C786B000D25073 /* hi */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -744,7 +758,7 @@
 				GCC_WARN_UNUSED_LABEL = YES;
 				GCC_WARN_UNUSED_PARAMETER = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				LOCALIZED_STRING_MACRO_NAMES = (
 					NSLocalizedString,
 					CFLocalizedString,
@@ -848,7 +862,7 @@
 				GCC_WARN_UNUSED_LABEL = YES;
 				GCC_WARN_UNUSED_PARAMETER = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				LOCALIZED_STRING_MACRO_NAMES = (
 					NSLocalizedString,
 					CFLocalizedString,

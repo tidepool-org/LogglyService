@@ -11,11 +11,13 @@ import LoopKit
 
 public final class LogglyService: Service {
 
-    public static let serviceIdentifier = "LogglyService"
+    public static let pluginIdentifier = "LogglyService"
 
     public static let localizedTitle = LocalizedString("Loggly", comment: "The title of the Loggly service")
 
     public weak var serviceDelegate: ServiceDelegate?
+    
+    public weak var stateDelegate: StatefulPluggableDelegate?
 
     public var customerToken: String?
 
@@ -44,12 +46,12 @@ public final class LogglyService: Service {
     public func completeUpdate() {
         try! KeychainManager().setLogglyCustomerToken(customerToken)
         createClient()
-        serviceDelegate?.serviceDidUpdateState(self)
+        stateDelegate?.pluginDidUpdateState(self)
     }
 
     public func completeDelete() {
         try! KeychainManager().setLogglyCustomerToken()
-        serviceDelegate?.serviceWantsDeletion(self)
+        stateDelegate?.pluginWantsDeletion(self)
     }
 
     private func createClient() {

@@ -11,7 +11,7 @@ import LoopKit
 
 public final class LogglyService: Service {
 
-    public static let pluginIdentifier = "LogglyService"
+    public let pluginIdentifier = "LogglyService"
 
     public static let localizedTitle = LocalizedString("Loggly", comment: "The title of the Loggly service")
 
